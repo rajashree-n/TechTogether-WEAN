@@ -1,0 +1,23 @@
+
+    <div id="load"></div>
+    <div id="load2">
+</div>
+    <div id="load3"></div>
+
+    <div id="contents">
+            <div class="page-content">       
+                    
+                     <router-outlet></router-outlet>
+      </div>
+    </div>
+
+    <script>
+    function myFunction2()
+{        
+    document.getElementById("load2").style.display="none";
+    document.getElementById("contents").style.display="block";
+    document.getElementById("load").style.display="none";
+    document.getElementById("load3").style.display="none";
+    
+}
+    </script>

@@ -1,0 +1,82 @@
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+  
+  
+  <div id="impress">
+      <div class="step slide" data-x="1000" data-y="-1500">
+        <q><h2>Hello, How is your mood today?  </h2> 
+        <h1>
+        <strong><button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" (click)="viewSearch('I am feeling loved')">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+                    </button>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" (click)="viewSearch('I am feeling good')">
+              <i class="fa fa-smile-o" aria-hidden="true"></i>
+            </button>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" (click)="viewSearch('I am feeling sad')">
+              <i class="fa fa-frown-o" aria-hidden="true"></i>
+                      </button>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect"(click)="viewSearch('I am feeling irritated')">
+              <i class="fa fa-meh-o" aria-hidden="true"></i>
+                      </button>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" (click)="viewSearch('I am feeling lucky')">
+            <i class="material-icons">tag_faces</i>
+          </button>
+        </strong>
+      </h1>
+          <p> ( press space-bar or arrow! )</p>
+   <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="myFunction()">
+      Skip the Questionnaire!
+    </button>
+  </q>
+          </div>
+    
+          <div class="step slide" data-x="500" data-y="-750">
+              <q><h2>Are you motivated enough to start your day?</h2> 
+      
+                  <button type="submit" #Search1 id="Search1" name="Search1" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" (click)="viewSearch('I am feeling motivate.')">
+                      Yes
+                     </button>
+                     <button type="submit" #Search2 id="Search2" name="Search2" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" (click)="viewSearch('I am feeling dull')">
+                        No
+                       </button>
+                <p> ( press space-bar or arrow! )</p>
+         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="myFunction()">
+            Skip the Questionnaire!
+          </button>
+        </q>
+                </div>
+
+                <div class="step slide" data-x="250" data-y="-300">
+                    <q><h2>Did you sleep well yesterday night? </h2> 
+                    <button type="submit" #Search3 id="Search3" name="Search3" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" (click)="viewSearch('I am very much active.')">
+                        Yes
+                       </button>
+                       <button type="submit" #Search4 id="Search4" name="Search4" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" (click)="viewSearch('I am feeling sleeply.')">
+                          No
+                         </button>
+                      <p> ( press space-bar or arrow! )</p>
+               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="myFunction()">
+                  SUBMIT!
+                </button>
+              </q>
+                      </div>
+          
+
+</div>
+<script>
+  function myFunction2()
+  {        
+      document.getElementById("load2").style.display="none";
+      document.getElementById("contents").style.display="block";
+      document.getElementById("load").style.display="none";
+      document.getElementById("load3").style.display="none";
+      
+  }
+</script>
+  
+    
+  

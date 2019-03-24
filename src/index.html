@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DailyTouch</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+  <title>About Me</title>
+  <link href="../assets/css/impress.css" rel="stylesheet" /> 
+ <!-- Material Design Lite -->
+ <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+ <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+ <!-- Material Design icon font -->
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link href="../assets/css/impress.css" rel="stylesheet" /> 
+</head>
+<body class="impress-not-supported">
+  <app-root></app-root>
+
+</body>
+<script src="../assets/js/main.js"></script>
+<script>impress().init();</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9117370-1']);
+  _gaq.push(['_trackPageview']);
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  function myFunction()
+{        
+    document.getElementById("load2").style.display="block";
+    document.getElementById("contents").style.display="none";
+    document.getElementById("load").style.display="none";
+    document.getElementById("load3").style.display="none";
+    
+}
+function myFunction2()
+{        
+    document.getElementById("load2").style.display="none";
+    document.getElementById("contents").style.display="block";
+    document.getElementById("load").style.display="none";
+    document.getElementById("load3").style.display="none";
+    
+}
+function showUsers()
+    {        
+        document.getElementById("teams").style.display="none";
+        document.getElementById("users").style.display="block";
+       
+        
+    }
+    function comp()  {
+      document.getElementById("teams").style.display="block";
+        document.getElementById("users").style.display="none";
+    }
+    function logout() {
+      //refresh the session
+      window.sessionStorage.clear();
+      window.localStorage.clear();
+      window.localStorage.clear();
+      localStorage.removeItem('session');
+      sessionStorage.removeItem('session');
+      //alert("done")
+     
+    }
+</script>
+</html>
